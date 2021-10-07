@@ -78,7 +78,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'stonks_db',
-        'USER': 'root',
+        'USER': 'django',
         'PASSWORD': 'AmaneKanata',
         'HOST': '',
         'PORT': '',
