@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'stonks_db',
         'USER': 'root',
-        'PASSWORD': 'Amanekanata',
+        'PASSWORD': 'AmaneKanata',
         'HOST': '',
         'PORT': '',
     }
