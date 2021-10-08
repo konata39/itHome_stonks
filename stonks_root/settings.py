@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['172.16.15.123']
 
 CRONJOBS = [
-    ('45 * * * *', 'stonks_index.corn_job'),
+    ('45 * * * *', 'stonks_index.views.corn_job'),
 ]
 
 # Application definition
