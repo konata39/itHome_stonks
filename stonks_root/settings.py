@@ -27,14 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-CRONJOBS = [
-    ('45 * * * *', 'stonks_index.views.corn_job'),
-]
 
 # Application definition
 
 INSTALLED_APPS = [
-    'django_crontab',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -59,7 +55,7 @@ ROOT_URLCONF = 'stonks_root.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates').replace('\\', '/')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates').replace('\\', '/')], #修改成資料夾位址
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -82,7 +78,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'stonks_db',
-        'USER': 'django',
+        'USER': 'root',
         'PASSWORD': 'AmaneKanata',
         'HOST': '',
         'PORT': '',
