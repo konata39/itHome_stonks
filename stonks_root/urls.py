@@ -22,5 +22,5 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^stonks/', include('stonks_index.urls')),
-    url(r'^/', views.index_page),
+    url(r'^', views.index_page),
 ]
