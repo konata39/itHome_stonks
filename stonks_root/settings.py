@@ -27,10 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+CRONJOBS = [
+    ('45 * * * *', 'stonks_index.views.corn_job'),
+]
 
 # Application definition
 
 INSTALLED_APPS = [
+    'django_crontab',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -78,7 +82,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'stonks_db',
-        'USER': 'root',
+        'USER': 'django',
         'PASSWORD': 'AmaneKanata',
         'HOST': '',
         'PORT': '',

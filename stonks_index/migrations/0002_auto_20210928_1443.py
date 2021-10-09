@@ -17,8 +17,8 @@ class Migration(migrations.Migration):
                 ('comp_id', models.IntegerField()),
                 ('year', models.IntegerField()),
                 ('season', models.IntegerField()),
-                ('balance_sheet', models.CharField(max_length=10000)),
-                ('income_statement', models.CharField(max_length=10000)),
+                ('balance_sheet', models.TextField(max_length=10000)),
+                ('income_statement', models.TextField(max_length=10000)),
             ],
         ),
         migrations.DeleteModel(

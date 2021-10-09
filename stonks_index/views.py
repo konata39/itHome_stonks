@@ -72,3 +72,8 @@ def get_stonks_data(request):
 
     #回傳200,這裡使用JsonResponse, 把dict之資料變成JSON
     return JsonResponse(data=return_dict, status=200)
+
+
+#測試crontab用
+def corn_job():
+    print("This is cronjob test")
